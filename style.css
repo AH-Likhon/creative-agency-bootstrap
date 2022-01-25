@@ -1,0 +1,13 @@
+.banner-bg-color{
+    background-color: #B0ACA5;
+   
+}
+.banner-right-image{
+    background-image: url('images/banner-img.png');
+    background-repeat: no-repeat;
+    /* background-position: top center; */
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+    border-radius: 2000px 600px 300px 500px / 1550px 600px 900px 500px;
+}
