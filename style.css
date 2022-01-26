@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
 .banner-bg-color{
-    background-color: #B0ACA5;
+    background-color: #b0aca552;
    
 }
 .banner-right-image{
@@ -10,4 +15,86 @@
     height: 350px;
     width: 350px;
     border-radius: 2000px 600px 300px 500px / 1550px 600px 900px 500px;
+}
+
+.creative-title{
+    color:#FF7214;
+    letter-spacing: 1px;
+}
+
+.custom-btn-bg{
+    background-color: #cc6817ea;
+}
+
+.about1{
+    width: 225px;
+    height: 300px;
+    margin-top: 80px;
+}
+.about2{
+    width: 225px;
+    height: 300px;
+    margin-top: 20px;
+}
+.about{
+    margin-left: -35px;
+}
+
+.about-span{
+    font-size: 12px;
+}
+
+#learn-more{
+    height: 40px;
+}
+
+.arrow-margin{
+    margin-top: -13px;
+    margin-left: 5px;
+}
+
+#special-features{
+    font-size: 14px;
+}
+
+.card-img1, .card-img2, .card-img3, .card-img4{
+    width: 80px;
+    padding: 20px;
+}
+
+#card-text{
+    font-size: 13px;
+}
+
+.card-img1{
+    background-color: #d6c4cc;
+}
+.card-img2{
+    background-color: #D4D4D4;
+}
+.card-img3{
+    background-color: #AACDD4;
+}
+.card-img4{
+    background-color: #D4C2CA;
+}
+
+#creative-left, #creative-right, #creative-graphic-right{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
+    height: 400px;
+}
+
+
+#creative-right{
+    background-image: url('images/creative-work.png');
+}
+
+#creative-left{
+    background-image: url('images/green-earth.png');
+}
+
+#creative-graphic-right{
+    background-image: url('images/graphic-design.png');
 }
