@@ -8,31 +8,28 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- font awesome kit -->
+    <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/393e29a5fd.js" crossorigin="anonymous"></script>
 
     <!-- Custom style css  -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>    
+<body>  
 
-    <!-- Bannner & Nav Start  -->
-    <div class="container-fluids banner-bg-color">
+  <!-- Start nav  -->
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <!-- Start nav  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#home">
                 <img width="70" src="images/nav-header.png" alt="logo">
             </a>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                <a class="nav-link active" aria-current="page" href="#home">HOME</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">ABOUT</a>
@@ -41,17 +38,23 @@
                 <a class="nav-link" href="#features">FEATURES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#bloack">BLOG</a>
+                <a class="nav-link" href="#project">PROJECT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">BLOG</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">CONTACT</a>
               </li>
             </ul>            
-          </div>
         </div>
-      </nav>
-    <!-- End nav  -->
-    
+      </div>
+    </nav>
+  <!-- End nav  -->
+  
+
+  <!-- Bannner & Nav Start  -->
+    <div class="container-fluids banner-bg-color p-5">
         <div class="row container py-5 mx-auto">
           <div class="col-sm-8 p-5">
             <p class="creative-title">Creative Agency</p>
@@ -63,12 +66,13 @@
           <div class="col-sm-4 banner-right-image">              
           </div>
         </div>
-      </div>
-    <!-- Bannner and Nav End  -->
+    </div>
+  <!-- Bannner and Nav End  -->
 
-    <div class="container-fluid">
+    
+  <div class="container-fluid">
         <!-- Customer Hero Start  -->
-      <div class="row my-5 about">
+      <div id="about" class="row my-5 about">
 
         <!-- start about  -->
         <div class="col-sm-5">
@@ -95,12 +99,14 @@
             <img class="arrow-margin" src="images/arrow.png" alt="">
             </div>
           </button>
-        </div>      
+        </div> 
+        <!-- End about  -->
+
       </div>
-      <!-- Customer Hero End  -->
+    <!-- Customer Hero End  -->
       
-      <!-- Card Div Start  -->
-      <div class="container my-5 py-5 text-center">
+    <!-- Start Features  -->
+      <div id="features" class="container my-5 py-5 text-center">
         <span id="special-features" class="creative-title text-uppercase">Special Features</span>
         <h4 class="fw-bold">Advertising with Difference</h4>
 
@@ -157,15 +163,14 @@
         </div>
         <!-- end card  -->
       </div>
-      <!-- Card Div End -->
-
+      <!-- End Features -->
     </div>
 
 
 
-    <!-- Start Recent Work Div  -->
-    <div class="text-center my-5 py-5">
-      <span id="special-features" class="creative-title text-uppercase">Special Features</span>
+    <!-- Start Recent Work/Project Div  -->
+    <div id="project" class="text-center my-5 py-5">
+      <span id="special-features" class="creative-title text-uppercase">Client Work Experience</span>
       <h4 class="fw-bold">Recent Creative Work</h4>
     </div>
 
@@ -240,7 +245,7 @@
       </div>
     </div>
 
-   <!-- End Recent Work Div  -->
+   <!-- End Recent Work/Project Div  -->
     
    <!-- Project Count start  -->
     <div class="container-fluid p-5 project-count">
@@ -342,8 +347,8 @@
       <span id="special-features" class="creative-title text-uppercase">Team Member</span>
       <h4 class="fw-bold">Our Experieced Team</h4>
 
-      <!-- start card  -->
       <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto mt-3">
+
         <div class="col">
           <div class="card h-100 w-100">
            
@@ -402,7 +407,235 @@
         </div>
 
       </div>
+    </div>
     <!-- End Team Members -->
+
+    <!-- Start Blog -->
+    <div id="blog" class="container my-5 py-5 text-center">
+      <span id="special-features" class="creative-title text-uppercase">Latest News</span>
+      <h4 class="fw-bold">Latest From Blog</h4>
+      
+      <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto mt-3">
+
+        <div class="col text-start">
+          <div class="card h-100 w-100">
+           
+              <img src="images/blog1.png" class="card-img-top" alt="...">
+           
+            <div class="card-body">
+              <p id="special-features" class="card-text my-3">Design | July 15, 2019</p>
+              <h5 class="card-title fw-bold">Make dry it is saying earth
+                lights great brought</h5>
+              <p id="special-features" class="card-text my-3">Software developer</p>
+
+              <div class="d-flex justify-content-start align-items-center gap-4">
+
+                <div class="d-flex justify-content-start align-items-center gap-2">
+                  <i class="far fa-comment-alt"></i>
+                  <p id="special-features">4 Comments</p>
+                </div>
+
+                <div class="d-flex justify-content-start align-items-center gap-2">
+                  <i class="far fa-heart"></i>
+                  <p id="special-features">15 like</p>
+                </div>                
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+          <div class="col text-start">
+          <div class="card h-100 w-100">
+           
+              <img src="images/blog2.png" class="card-img-top" alt="...">
+           
+            <div class="card-body">
+              <p id="special-features" class="card-text my-3">Design | July 15, 2019</p>
+              <h5 class="card-title fw-bold">Make dry it is saying earth
+                lights great brought</h5>
+              <p id="special-features" class="card-text my-3">Software developer</p>
+
+              <div class="d-flex justify-content-start align-items-center gap-4">
+
+                <div class="d-flex justify-content-start align-items-center gap-2">
+                  <i class="far fa-comment-alt"></i>
+                  <p id="special-features">4 Comments</p>
+                </div>
+
+                <div class="d-flex justify-content-start align-items-center gap-2">
+                  <i class="far fa-heart"></i>
+                  <p id="special-features">15 like</p>
+                </div>                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col text-start">
+          <div class="card h-100 w-100">
+           
+              <img src="images/blog3.png" class="card-img-top" alt="...">
+           
+            <div class="card-body">
+              <p id="special-features" class="card-text my-3">Design | July 15, 2019</p>
+              <h5 class="card-title fw-bold">Make dry it is saying earth
+                lights great brought</h5>
+              <p id="special-features" class="card-text my-3">Software developer</p>
+
+              <div class="d-flex justify-content-start align-items-center gap-4">
+
+                <div class="d-flex justify-content-start align-items-center gap-2">
+                  <i class="far fa-comment-alt"></i>
+                  <p id="special-features">4 Comments</p>
+                </div>
+
+                <div class="d-flex justify-content-start align-items-center gap-2">
+                  <i class="far fa-heart"></i>
+                  <p id="special-features">15 like</p>
+                </div>                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- End Blog -->
+
+
+    <!-- Start Contact Us -->
+    <div id="contact" class="container row row-cols-1 row-cols-md-2 g-4 mx-auto my-5 py-5">
+      <div class="col text-start">
+        <span class="creative-title">Contact Us</span>
+        <h4 class="fw-bold my-2">Don’t Hesitate, Ask <br> Any Query</h4>
+
+        <div class="d-flex align-items-center justify-content-start mt-4 gap-3">
+          <i class="fas fa-map-marked-alt"></i>
+          <p id="special-features">123 Main Street, 310 USA 12345</p>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-start gap-3">
+          <i class="fas fa-phone-volume"></i>
+          <p id="special-features">+01- 190 -2258 - 2658</p>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-start gap-3">
+          <i class="fas fa-envelope-open-text"></i>
+          <p id="special-features">Examp@creativeagn.com</p>
+        </div>
+
+      </div>
+
+      <form class="col text-center">
+        <div class="d-flex mb-3 gap-3">
+          <input type="name" class="form-control w-100" placeholder="Name">
+          <input class="form-control w-100"  type="tel" name="phone" placeholder="Phone" maxlength="11" required>
+        </div>
+        <input type="email" class="form-control w-100 mb-3" placeholder="Email">
+        <textarea class="form-control mb-3" placeholder="Your Message" rows="5"></textarea>
+        <button type="button submit" class="btn custom-btn-bg text-white rounded-pill text-uppercase">Send Message</button>
+      </form>
+
+    </div>
+    <!-- End Contact Us -->
+
+
+    <!-- Start Brand  -->
+    <div class="container row row-cols-2 row-cols-md-4 g-4 mx-auto py-5">
+      <div class="col">
+        <img src="images/brand1.png" alt="">
+      </div>
+
+      <div class="col">
+        <img src="images/brand2.png" alt="">
+      </div>
+
+      <div class="col">
+        <img src="images/brand3.png" alt="">
+      </div>
+
+      <div class="col">
+        <img src="images/brand4.png" alt="">
+      </div>
+
+    </div>
+    <!-- End Brand  -->
+
+
+    <!-- Start Footer  -->
+
+    <footer>
+      <!-- Start Top Footer -->
+
+      <div id="top-footer" class="container-fluid p-5">
+        <div class="container row row-cols-1 row-cols-md-4 g-5 mx-auto">
+          <div class="col">
+            <a class="navbar-brand" href="#home">
+              <img width="90" src="images/logo.png" alt="logo">
+            </a>
+            <p id="footer-paragraph" class="mt-4">
+              Evening creature waters unto fill deep man given divided whales man kind Winged open us and there to multiply land evening under 
+            </p>
+          </div>
+          <div class="col text-white">
+            <h4 id="footer-title" class="mb-4">Our Service</h4>
+            <ul class="footer-ul">
+              <li>Frontend Developing</li>
+              <li>Graphic Design</li>
+              <li>Software Developing</li>
+              <li>Digital Marketing</li>
+              <li>Wordpress Developing</li>
+            </ul>
+          </div>
+          <div class="col text-start text-white">
+            <h4 id="footer-title" class="mb-4">Instagram Feed</h4>
+            <div class="row row-cols-3 row-cols-md-3 g-2">
+              <img src="images/creative-work.png" alt="" class="col">
+              <img src="images/insta2.png" alt="" class="col">
+              <img src="images/insta3.png" alt="" class="col">
+              <img src="images/insta4.png" alt="" class="col">
+              <img src="images/insta5.png" alt="" class="col">
+              <img src="images/green-earth.png" alt="" class="col">
+            </div>
+          </div>
+  
+          <div class="col text-white text-start">
+            <h4 id="footer-title" class="mb-4">Contact Info</h4>
+  
+            <div class="d-flex align-items-start justify-content-start mt-4 gap-3 text-secondary">
+              <i class="fas fa-map-marker-alt"></i>
+              <p id="special-features">67 Sasha Cove,67 Sasha Cove Eest, Andrewburgh, ML11 DB innings West pink city</p>
+            </div>
+  
+            <div class="d-flex align-items-start justify-content-start gap-3 text-secondary">
+              <i class="fas fa-mobile-alt"></i>
+              <a class="text-decoration-none text-secondary" href="callto:+02 639 4982 2698 - 2">
+                <p id="special-features">+02 639 4982 2698 - 2</p>
+              </a>
+            </div>
+  
+            <div class="d-flex align-items-start justify-content-start gap-3 text-secondary">
+              <i class="far fa-envelope"></i>
+              <a class="text-decoration-none text-secondary" href="mailto:info@themeies.com">
+                <p id="special-features">info@themeies.com</p>
+              </a>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+      <!-- End Top Footer  -->
+
+      <!-- Start Bootom Footer  -->
+      <div id="bottom-footer" class="container-fluid p-2 text-secondary text-center">
+        <p class="mt-4">Copyright © 2021 <span>themeies.com</span> All Rights Reserved By <a class="text-decoration-none" href="https://likhon.netlify.app/" target="_blank">Md. Akramul Hoque</a></p>
+      </div>
+      <!-- End Bootom Footer  -->
+    </footer>
+    
     
 
     <!-- Bootstrap JS  -->
