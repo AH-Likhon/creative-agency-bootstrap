@@ -2,6 +2,8 @@
 
 *{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .banner-bg-color{
     background-color: #b0aca552;
@@ -10,7 +12,6 @@
 .banner-right-image{
     background-image: url('images/banner-img.png');
     background-repeat: no-repeat;
-    /* background-position: top center; */
     background-size: cover;
     height: 350px;
     width: 350px;
@@ -97,4 +98,40 @@
 
 #creative-graphic-right{
     background-image: url('images/graphic-design.png');
+}
+
+.project-count{
+    background-color: #12303E;
+}
+
+#testimonials-left-img{
+    background-image: url('images/testimonials.png');
+    background-color: rgba(0,0,0, 0.4);
+    height: 450px;
+}
+
+.fas.fa-play-circle{
+    color: #FF7214;
+    font-size: 50px;
+    -webkit-box-shadow: 0px 5px 27px 14px #6C4125; 
+    box-shadow: 0px 5px 27px 10px #6C4125;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.right-arrow-bg{
+    margin-left: -20px;
+}
+
+.team-member{
+    width: 97%;
+    height: 350px;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+
+.card-body ul li{
+    cursor: pointer;
+    font-size: 14px;
+    color: gray;
 }
